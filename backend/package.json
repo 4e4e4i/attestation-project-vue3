@@ -1,0 +1,39 @@
+{
+  "name": "attestation-project-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "clean": "rimraf src/dist",
+    "build": "npm run clean && mkdir \"src/dist\" && babel src -s -D -d \"src/dist\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "rimraf": "^3.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "node": "10.8.0"
+          }
+        }
+      ]
+    ]
+  }
+}

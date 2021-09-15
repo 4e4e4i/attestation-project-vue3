@@ -1,0 +1,28 @@
+@import "./animations/animations";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}

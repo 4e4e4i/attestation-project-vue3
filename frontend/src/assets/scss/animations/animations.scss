@@ -1,0 +1,19 @@
+.shakeAnimation {
+  animation: 1s infinite linear;
+  animation-name: shake;
+}
+
+@keyframes shake {
+  0% { transform: translate(-51%, -51%) rotate(0deg); }
+  10% { transform: translate(-49%, -48%) rotate(-1deg); }
+  20% { transform: translate(-47%, -50%) rotate(1deg); }
+  30% { transform: translate(-53%, -52%) rotate(0deg); }
+  40% { transform: translate(-51%, -51%) rotate(1deg); }
+  50% { transform: translate(-51%, -52%) rotate(-1deg); }
+  60% { transform: translate(-47%, -51%) rotate(0deg); }
+  70% { transform: translate(-53%, -51%) rotate(-1deg); }
+  80% { transform: translate(-49%, -49%) rotate(1deg); }
+  90% { transform: translate(-51%, -52%) rotate(0deg); }
+  100% { transform: translate(-51%, -48%) rotate(-1deg); }
+}
+
